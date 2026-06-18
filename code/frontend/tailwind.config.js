@@ -7,12 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'kalkun-olive': '#7e8d5f',
-        'kalkun-olive-light': '#9cb075',
-        'kalkun-brown': '#c8b6a6',
-        'kalkun-brown-light': '#e4d5c7',
-        'kalkun-grey': '#f0f0f0',
-        'kalkun-dark': '#2c2c2c',
+        'spotify-green': '#1DB954',
+        'spotify-green-hover': '#1ed760',
+        'spotify-bg': '#121212',
+        'spotify-bg-light': '#191414',
+        'spotify-surface': '#282828',
+        'spotify-surface-light': '#404040',
+        'spotify-text': '#FFFFFF',
+        'spotify-text-secondary': '#B3B3B3',
+        'spotify-text-subdued': '#717171',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

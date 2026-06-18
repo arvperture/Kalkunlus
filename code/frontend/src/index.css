@@ -4,20 +4,55 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-kalkun-grey to-white text-kalkun-dark font-sans antialiased min-h-screen;
+    @apply bg-spotify-bg text-spotify-text font-sans antialiased min-h-screen;
+  }
+
+  input,
+  textarea {
+    @apply bg-spotify-surface border-spotify-surface-light text-spotify-text placeholder-spotify-text-subdued;
   }
 }
 
-@layer utilities {
-  .glass-panel {
-    @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-sm rounded-2xl;
-  }
-  
+@layer components {
   .btn-primary {
-    @apply bg-kalkun-olive text-white px-6 py-2 rounded-xl hover:bg-kalkun-olive-light transition-all duration-300 shadow-md hover:shadow-lg font-medium;
+    @apply bg-spotify-green text-spotify-bg px-8 py-3 rounded-full hover:bg-spotify-green-hover transition-all duration-300 font-semibold text-sm;
   }
-  
+
   .btn-secondary {
-    @apply bg-kalkun-brown text-white px-6 py-2 rounded-xl hover:bg-kalkun-brown-light transition-all duration-300 shadow-md hover:shadow-lg font-medium;
+    @apply bg-transparent border-2 border-spotify-text-secondary text-spotify-text px-6 py-2 rounded-full hover:border-spotify-text transition-all duration-300 font-semibold text-sm;
   }
+
+  .nav-item {
+    @apply px-4 py-3 rounded-lg text-spotify-text-secondary hover:text-spotify-text hover:bg-spotify-surface transition-all duration-200 cursor-pointer;
+  }
+
+  .nav-item-active {
+    @apply bg-spotify-green text-spotify-bg font-semibold;
+  }
+
+  .card {
+    @apply bg-spotify-surface rounded-lg p-6 hover:bg-spotify-surface-light transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:bg-spotify-surface/80 cursor-pointer;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #535353;
 }
