@@ -398,9 +398,9 @@ We follow strict architectural guidelines. Before contributing:
 ## 💬 Support
 
 For issues, questions, or feature requests:
-- 📧 Email: support@kalkunlus.edu
+- 📧 Email: arvinaydin.space@gmail.com
 - 🐙 GitHub Issues: [Issues](https://github.com/kalkunlus/kalkunlus/issues)
-- 💬 Discord: [Community](https://discord.gg/kalkunlus)
+- 💬 Discord: [Community](https://discord.gg/t3naHarcMb)
 
 ---
 
