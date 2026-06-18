@@ -6,7 +6,7 @@
 Edit `code/frontend/package.json` and change line 2:
 
 ```json
-"homepage": "https://YOUR_GITHUB_USERNAME.github.io/Kalkunlus",
+"homepage": "https://arvperture.github.io/Kalkunlus",
 ```
 
 Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
