@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #0f172a 100%);
+    min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #a855f7 0%, #7e22ce 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #c084fc 0%, #a855f7 100%);
+}
+
+/* Text selection */
+::selection {
+    background-color: #a855f7;
+    color: #faf5ff;
+}
+
+/* Custom components */
+.glass-morphism {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-border {
+    position: relative;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%) padding-box;
+    border: 1px solid transparent;
+    border-image: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%) 1;
+}
+
+.card-gradient {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* Parallax effect base */
+.parallax-container {
+    perspective: 1000px;
+    overflow-x: hidden;
+}
+
+.parallax-item {
+    transform-style: preserve-3d;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid #a855f7;
+    outline-offset: 2px;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #1f2937 100%);
+        color: #f9fafb;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
