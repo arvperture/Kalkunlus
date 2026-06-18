@@ -28,7 +28,7 @@ The core philosophy of Kalkunlus is that **mathematics requires deep conceptual 
 ### 3.1 Technology Stack
 * **Frontend:** HTML5, Tailwind CSS, JavaScript (React.js)
 * **Backend Ecosystem (Hybrid Engine):**
-    * **PHP Laravel:** Handles relational business logic, core user authentication, user progress persistence, database seeding, authorization, and standard CRUD operations for quizzes.
+    * **PHP Laravel 12:** Handles relational business logic, core user authentication, user progress persistence, database seeding, authorization, and standard CRUD operations for quizzes.
     * **Python FastAPI:** Handles high-performance mathematical computing, AI generations, Dynamic Graph routing, OCR matrix translations, and low-latency WebSocket connections for the Live Talk system.
 * **Database:** SQL via MySQL
 
