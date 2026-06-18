@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-kalkun-grey to-white text-kalkun-dark font-sans antialiased min-h-screen;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-sm rounded-2xl;
+  }
+  
+  .btn-primary {
+    @apply bg-kalkun-olive text-white px-6 py-2 rounded-xl hover:bg-kalkun-olive-light transition-all duration-300 shadow-md hover:shadow-lg font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-kalkun-brown text-white px-6 py-2 rounded-xl hover:bg-kalkun-brown-light transition-all duration-300 shadow-md hover:shadow-lg font-medium;
+  }
+}
