@@ -379,12 +379,6 @@ We follow strict architectural guidelines. Before contributing:
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License — see LICENSE file for details.
-
----
-
 ## 🎯 Roadmap
 
 - [x] Core platform structure
