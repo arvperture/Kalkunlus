@@ -24,9 +24,10 @@ The GitHub Actions workflow will:
 If you want to deploy manually:
 
 ```bash
-cd code/frontend
+cd frontend
 npm install
-npm run deploy
+npm run build
+# then publish the generated dist folder manually if desired
 ```
 
 ## 📍 Access Your Website
@@ -38,12 +39,12 @@ https://YOUR_GITHUB_USERNAME.github.io/Kalkunlus/
 ```
 
 **To update the homepage URL:**
-Edit `code/frontend/package.json` and replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
+Edit `frontend/package.json` and replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 
 ## ⚙️ Configuration
 
 ### Base Path
-The app is configured with base path `/Kalkunlus/` in `code/frontend/vite.config.js`
+The app is configured with base path `/Kalkunlus/` in `frontend/vite.config.js`
 This ensures all assets and routes work correctly on GitHub Pages.
 
 ### Environment
@@ -55,7 +56,7 @@ This ensures all assets and routes work correctly on GitHub Pages.
 
 1. **Update homepage URL** (Optional but recommended)
    ```bash
-   cd code/frontend
+   cd frontend
    nano package.json  # or edit in VS Code
    # Replace YOUR_GITHUB_USERNAME with your actual username
    ```
@@ -79,8 +80,8 @@ This ensures all assets and routes work correctly on GitHub Pages.
 
 ## 📋 Files Modified
 
-- `code/frontend/vite.config.js` - Added base path for GitHub Pages
-- `code/frontend/package.json` - Added deploy scripts and gh-pages dependency
+- `frontend/vite.config.js` - Added base path for GitHub Pages
+- `frontend/package.json` - Added homepage configuration for GitHub Pages
 - `.github/workflows/deploy.yml` - GitHub Actions workflow for automatic deployment
 
 ## 🔄 Making Updates
@@ -108,8 +109,8 @@ Your website will automatically update within 1-2 minutes!
 
 ### Deployment workflow fails
 - Go to Actions tab and check the error logs
-- Ensure `code/frontend` path is correct in `.github/workflows/deploy.yml`
-- Make sure `package-lock.json` exists in `code/frontend`
+- Ensure `frontend` path is correct in `.github/workflows/deploy.yml`
+- Make sure your dependencies are listed in `frontend/package.json`
 
 ## 📚 Resources
 

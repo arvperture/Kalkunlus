@@ -3,10 +3,10 @@
 ## ⚡ 3-Step Setup
 
 ### Step 1: Update Homepage URL (ONE-TIME)
-Edit `code/frontend/package.json` and change line 2:
+Edit `frontend/package.json` and change line 2:
 
 ```json
-"homepage": "https://arvperture.github.io/Kalkunlus",
+"homepage": "https://YOUR_GITHUB_USERNAME.github.io/Kalkunlus",
 ```
 
 Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.

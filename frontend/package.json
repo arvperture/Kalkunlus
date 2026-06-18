@@ -1,6 +1,7 @@
 {
     "name": "kalkunlus-frontend",
     "version": "1.0.0",
+    "homepage": "https://arvperture.github.io/Kalkunlus",
     "type": "module",
     "scripts": {
         "dev": "vite",
